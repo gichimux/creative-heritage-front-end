@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: 'Manjari', sans-serif;
+    padding: 10px;
+    background: #ffff;
+    
+  }
+ 
+  /* .header-img{
+    width: 100%;
+    height: 500px;   
+    filter:opacity(60%);
+ 
+  } */
+
+  .site-id{
+    margin: auto;
+    padding: 50px;
+  
+  }
+
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    height: 300px;
+    text-align: center;
+    background: linear-gradient(270deg, #67D7F7  , #FC9B1F);
+    animation: gradientBG 15s ease infinite;
+
+  }
+ 
+
+  
+  .header h1 {
+    font-size: 64px;
+    font-family: 'Kaushan Script', cursive;
+    color:#ddd;
+    text-shadow: 2px 2px 8px #888;
+    transform: rotate(-8deg);
+ 
+  }
+  .header p{
+    font-size: 26px;
+    font-family: 'Kaushan Script', cursive;
+    color: #ddd;
+    text-shadow: 2px 2px 8px #888;
+    transform: rotate(-10deg);
+
+  }
+  
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    border-bottom: 2px solid #67D7F7;
+    
+  }
+  #logo {
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    color:#67D7F7;
+   /* margin: auto; */
+    padding: 20px;
+    float: left;
+    text-decoration: none;
+
+  }
+
+  /* Style the topnav links */
+  .topnav .nav-link {
+    float: left;
+    display: block;
+    color: #FC9B1F;
+    text-align: center;
+    padding: 25px 16px 20px;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+
+  /* Change color on hover */
+  .topnav .nav-link:hover {
+  font-size: 15px;
+  color: #67D7F7;
+  }
+  
+  #subscribe{
+    border: 1.5px solid #FC9B1F;
+    border-radius: 20px;
+    padding: 12px 16px 8px;
+    margin-top: 20px;
+    margin-right:10px;
+    text-decoration: none;
+    color:#FC9B1F;
+
+  }
+
+  #subscribe:hover{
+    background: #FC9B1F;
+    color: #fff;
+    padding: 10px 16px 8px;
+
+  }
+  /* ######### SEARCH BAR ########## */
+
+  .search {
+    width: 100%;
+    position: absolute;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #333;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+    color: #fff;
+    opacity: 1;
+    /* border-bottom: 2px solid #67D7F7; */
+    border-right: 2px solid #67D7F7;
+  }
+  
+  .searchTerm:focus{
+    color: #333;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 20%;
+    position: relative;
+    /* padding-top: 30px; */
+    left: 50%;
+    transform: translate(50%, 50%);
+    top: 30px;
+  }
+  
+  /* ############END OF SEARCH BAR######## */
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .category {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+    justify-content: space-evenly;
+
+  }
+  
+  /* Style the topnav links */
+  .category a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .category button{
+    padding: 10px 16px 8px;
+    border-radius: 20px;
+    border: 1px solid #FC9B1F;
+    color: #ffff;
+    background-color: #333;
+  }
+   /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    background-image: url(../img/bg1.jpg);
+
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+
+  }
+  
+  .social{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 25px;
+  }
+  /* Fake image */
+  .fakeimg {
+    background-image:url(../img/bg5.jpg);
+    width: 100%;
+    padding: 20px;
+  }
+.lead-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  text-align: center;
+  width: 100%;
+}
+.lead-story{
+  width: 80%;
+  margin: auto;
+}
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+#articles{
+  box-shadow: 15px 15px 25px  #f1f1f1;
+  border: 1px solid #FC9B1F;
+}
+
+ h6{    
+   color:#FC9B1F;
+ }
+
+
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-gp {
+  top: 270px;
+}
+
+.float-rs {
+  top: 325px;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-pn {
+  top: 435px;
+}
+/* Floating Social Media Bar Style Ends Here */
+
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
